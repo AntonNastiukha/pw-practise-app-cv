@@ -8,6 +8,12 @@ export default defineConfig<TestOptions>({
   retries: 0,
   reporter: 'html',
 
+  webServer: {
+    command: 'npm run start',
+    url: 'http://localhost:4200/',
+    timeout: 120 * 1000,
+  },
+
   use: {
     baseURL: 'http://localhost:4200/',
     globalQaURL: 'https://www.globalsqa.com/demo-site/draganddrop/',
