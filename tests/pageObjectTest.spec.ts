@@ -16,7 +16,7 @@ test('open layout page', async ({ page }) => {
     await pm.navigateTo().tooltipsPage()
 })
 
-test.only('Fill in all fields and click signIn button', async ({ page }) => {
+test('Fill in all fields and click signIn button', async ({ page }) => {
     const pm = new PageManager(page)
     await pm.navigateTo().formLayoutsPage()
     const fullName = faker.person.fullName({sex: "female"})
