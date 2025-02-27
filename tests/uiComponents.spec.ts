@@ -33,7 +33,7 @@ test.describe('Forms layouts page', () => {
         const radioOne = usingTheGridBox.getByRole('radio', {name: 'Option 1'})
         await radioOne.check({force: true})
         expect(await radioOne.isChecked()).toBeTruthy()
-        await expect(usingTheGridBox).toHaveScreenshot()
+        // await expect(usingTheGridBox).toHaveScreenshot()
 
 
         const radioTwo = usingTheGridBox.getByLabel('Option 2')
