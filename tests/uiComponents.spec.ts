@@ -27,7 +27,7 @@ test.describe('Forms layouts page', () => {
         await expect(usingTheGridEmailInput).toHaveValue('mySecondEmail@test.com')
     }) 
 
-    test.only('radio buttos', async({page}) => {
+    test('radio buttos', async({page}) => {
         const usingTheGridBox  = page.locator('nb-card', {hasText: 'Using The Grid'})
 
         const radioOne = usingTheGridBox.getByRole('radio', {name: 'Option 1'})
